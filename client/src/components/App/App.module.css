@@ -1,0 +1,14 @@
+.layout{
+    display: flex;
+    background-color: var(--main-color);
+    width: 100vw;
+    height: 100vh;
+    padding: 20px 20px 20px 0;
+}
+.main{
+    height: 100%;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 25px;
+    padding: 30px;
+}

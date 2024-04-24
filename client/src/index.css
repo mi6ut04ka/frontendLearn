@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Idealist';
+  src: url('./fonts/idealist-sans.light_.ttf');
+  font-weight:300;
+  font-style:normal;
+}
+:root{
+  --main-color: #5F7770;
+  --second-color: #E4EEEB;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+.button{
+  background-color: var(--main-color);
+  color: var(--second-color);
+  padding: 13.5px 20px;
+  border-radius: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+.spinner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Idealist";
+  font-optical-sizing: auto;
+  font-style:normal;
+}
+
+

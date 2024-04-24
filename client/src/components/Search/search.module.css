@@ -1,0 +1,21 @@
+.searchPanel{
+    position: relative;
+    margin: auto 0;
+}
+.searchPanel img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 28px;
+}
+.search{
+    height: 47px;
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    width: 604px;
+    border: none;
+    padding: 14px 51px;
+    font-size: 20px;
+}
