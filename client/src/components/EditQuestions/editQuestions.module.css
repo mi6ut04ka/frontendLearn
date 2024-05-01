@@ -1,0 +1,21 @@
+.form{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px
+}
+.question{
+    padding: 13.5px 20px;
+    background-color: #F2F2F2;
+    outline: #DFDFDF;
+    border: #DFDFDF;
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none;
+    overflow-y: scroll;
+    height: 247px;
+    width: 100%;
+}
+.save{
+    width: 240px;
+    justify-content: center;
+}

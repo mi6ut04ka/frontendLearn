@@ -1,0 +1,17 @@
+.admin{
+    margin-top: 86px;
+}
+.passive{
+    color: #000;
+    background-color: #F2F2F2;
+}
+.btn{
+    width: 240px;
+    justify-content: center;
+}
+.btns{
+    display: flex;
+    gap:20px;
+}
+
+

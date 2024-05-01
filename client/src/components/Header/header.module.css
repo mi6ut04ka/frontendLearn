@@ -1,0 +1,88 @@
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.user{
+    background-color: #F2F2F2;
+    border-radius: 15px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    height: 47px;
+}
+.name{
+    padding:13.5px 20px;
+}
+
+.avatar{
+    background-color: #C3CAF1;
+    height: 47px;
+    width: 47px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice{
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin-left: 20px;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.isNotice::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: #EE6161;
+    position: absolute;
+    border-radius: 100%;
+    top: 10px;
+    right: 14px;
+}
+.isNotice::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--main-color);
+    position: absolute;
+    border-radius: 100%;
+    top: 8.5px;
+    right: 13px;
+}
+.settings{
+    height: 47px;
+    width: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    margin-left: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
+.settings img:hover{
+    animation: spin .5s linear;
+}
+.btns{
+    display: flex;
+    gap:20px
+}

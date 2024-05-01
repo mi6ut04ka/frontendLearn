@@ -1,0 +1,72 @@
+.form{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px
+}
+.center{
+    flex-grow: 1;
+}
+.center h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.question{
+    padding: 13.5px 20px;
+    background-color: #F2F2F2;
+    outline: #DFDFDF;
+    border: #DFDFDF;
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none;
+    overflow-y: scroll;
+    height: 247px;
+    width: 100%;
+}
+.add_answres{
+    width: 231px;
+    border: #B1B1B1;
+    color: #000;
+    border: 1px solid #B1B1B1;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.add_answres span{
+    font-size: 30px;
+    font-family: serif;
+    display: flex;
+    align-items: center;
+}
+.btns_bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.save{
+    width: 240px;
+    justify-content: center;
+}
+.answers{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    position: relative;
+}
+.answers input{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(-50%);
+    left: -35px;
+}
+.answers textarea{
+    resize: none;
+    background-color: #F2F2F2;
+    border: 1px solid #DFDFDF;
+    border-radius: 15px;
+    flex-grow: 1;
+    padding: 13.5px 20px;
+    font-size: 20px;
+}
