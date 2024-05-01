@@ -4,7 +4,10 @@
     width: 100vw;
     height: 100vh;
     padding: 20px 20px 20px 0;
+<<<<<<< HEAD
     overflow-y: auto;
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 }
 .main{
     height: 100%;
@@ -12,5 +15,8 @@
     width: 100%;
     border-radius: 25px;
     padding: 30px;
+<<<<<<< HEAD
     overflow-y: auto;
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 }

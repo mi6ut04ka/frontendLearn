@@ -38,9 +38,12 @@
     color: #A9BBB6;
     margin-bottom: 20px;
 }
+<<<<<<< HEAD
 .li:hover{
     color: #fff
 }
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 
 .li_active{
     list-style-type: none;
@@ -64,9 +67,12 @@
     position: relative;
     cursor: pointer;
 }
+<<<<<<< HEAD
 .logout:hover{
     color: #fff;
 }
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 .logout::after{
     position: absolute;
     content: '';
@@ -75,9 +81,13 @@
     background: linear-gradient(to right, rgba(255,255,255,0), #A9BBB6, rgba(255,255,255,0));
     top: -20px;
     left: -10px;
+<<<<<<< HEAD
 }
 .admin{
     width: 100%;
     margin-bottom: 19px;
 
 }
+=======
+}
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c

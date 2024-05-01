@@ -1,5 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import { IUser } from "../models/IUser";
+<<<<<<< HEAD
 import { ITopic } from "../models/ITopic";
 import AuthService from "../services/AuthService";
 import axios from "axios";
@@ -9,12 +10,23 @@ import FileService from "../services/FileService";
 import QuestionsService from "../services/QuestionsService";
 import { IQuestion } from "../models/IQuestions";
 import { IAnswer } from "../models/IAnswer";
+=======
+import AuthService from "../services/AuthService";
+import axios from "axios";
+import { AuthResponse } from "../models/response/AuthResponse";
+import { API_URL } from "../http";
+import FileService from "../services/FileService";
+import UserService from "../services/UserService";
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 
 export default class Store{
     user = {} as IUser;
     isAuth = false;
     isLoading = false;
+<<<<<<< HEAD
     topics = [] as ITopic[];
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 
     constructor() {
         makeAutoObservable(this);
@@ -23,10 +35,13 @@ export default class Store{
     setAuth(bool: boolean) {
         this.isAuth = bool;
     }
+<<<<<<< HEAD
 
     setTopics(topis: ITopic[]){
         this.topics = topis;
     }
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
     
     setUser(user: IUser){
         this.user = user;
@@ -35,6 +50,7 @@ export default class Store{
     setLoading(bool: boolean) {
         this.isLoading = bool;
     }
+<<<<<<< HEAD
     async fetchTopics() {
         try{
             const response = await $api.get<ITopic[]>(`${process.env.REACT_APP_API_URL}/questions/topics`)
@@ -63,6 +79,9 @@ export default class Store{
             throw new Error(e.response?.data.message)
         }
     }
+=======
+
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
     async login (email: string, password: string) {
         try{
             this.setLoading(true)
@@ -111,7 +130,11 @@ export default class Store{
     async checkAuth() {
         this.setLoading(true)
         try{
+<<<<<<< HEAD
             const response = await axios.get<AuthResponse>(`${process.env.REACT_APP_API_URL}/refresh`, {withCredentials: true})
+=======
+            const response = await axios.get<AuthResponse>(`${API_URL}/refresh`, {withCredentials: true})
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
             
             localStorage.setItem('token', response.data.accessToken)
             this.setAuth(true)
@@ -148,6 +171,7 @@ export default class Store{
         }
     }
 
+<<<<<<< HEAD
     async addQuestionWithAnswers(answers: {bool: boolean, text: string}[],question: string,topic: number){
         try{
             this.setLoading(true)
@@ -161,6 +185,8 @@ export default class Store{
             this.setLoading(false)
         }
     }
+=======
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 
 }
 

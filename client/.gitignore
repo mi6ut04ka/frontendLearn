@@ -13,6 +13,10 @@
 
 # misc
 .DS_Store
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
 .env.local
 .env.development.local
 .env.test.local

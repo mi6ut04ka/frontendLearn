@@ -16,7 +16,11 @@ const Header = () => {
             <div className={style.name}>{store.user.name}</div>
             {store.user.avatar? 
             <img className={style.avatar} src={process.env.REACT_APP_SERVER_URL + store.user.avatar} alt="Avatar" />:
+<<<<<<< HEAD
             <div className={style.avatar}>{store.user.name ? store.user.name[0].toUpperCase() : ""}</div> }
+=======
+            <div className={style.avatar}>{store.user.name[0].toUpperCase()}</div> }
+>>>>>>> cf350cb7890880d44dfb82159485905f5080dc4c
         </div>
         <div className={style.notice + ' ' + style.isNotice}>
                 <img src={bell} alt="bell" />
